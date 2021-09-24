@@ -39,6 +39,7 @@ export const Card = styled.div`
       props.theme.breakpoint.laptop}) {
     height: 9rem;
     width: 13em;
+    margin: 0;
   }
 
   @media only screen and (min-width: ${props =>

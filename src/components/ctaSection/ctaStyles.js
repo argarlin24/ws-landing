@@ -37,4 +37,9 @@ export const MainHeading = styled.h1`
   color: #ffffff;
   padding: 1rem 0;
   line-height: 67.77px;
+
+  @media only screen and (min-width: ${props =>
+      props.theme.breakpoint.tablet}) {
+    width: 420px;
+  }
 `
