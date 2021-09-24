@@ -22,20 +22,18 @@ export const Card = styled.div`
   padding: 1.5rem;
 `
 
-export const Img = styled.img.attrs(props => ({
-  className: props.className,
-}))`
-  & .AugmentedReality {
+export const Img = styled.img`
+  &.AugmentedReality {
     left: 165px;
     bottom: 100px;
   }
 
-  & .VirtualReality {
+  &.VirtualReality {
     left: 165px;
     bottom: 100px;
   }
 
-  & .Mobile {
+  &.Mobile {
     left: 180px;
     bottom: 100px;
     transform: rotate(44deg);
@@ -45,28 +43,6 @@ export const Img = styled.img.attrs(props => ({
   width: 50%;
 `
 
-export const ImgOne = styled.img`
-  position: absolute;
-  left: 165px;
-  bottom: 100px;
-  height: auto;
-  width: 50%;
-`
-export const ImgTwo = styled.img`
-  position: absolute;
-  left: 165px;
-  bottom: 100px;
-  height: auto;
-  width: 50%;
-`
-export const ImgThree = styled.img`
-  position: absolute;
-  left: 180px;
-  bottom: 100px;
-  height: auto;
-  width: 50%;
-  transform: rotate(44deg);
-`
 export const StyledLink = styled(Link)`
   font-size: 1.12rem;
 `
