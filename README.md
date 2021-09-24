@@ -4,4 +4,4 @@
 
 This landing page was built with Gatsby, Styled Components, and Contentful.
 
-To run the project clone it from Github and run npm install in root directory. Once npm installed use run gatsby develop in the terminal to start the development server.
+To run the project clone it from Github and run npm install in the root directory. Once npm has installed all packages, run gatsby develop in the terminal to start the development server.
