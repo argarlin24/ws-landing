@@ -31,8 +31,8 @@ const Cta = ({ props }) => {
       <MainHeading>{data.cta.edges[0].node.headline}</MainHeading>
       <Text>{data.cta.edges[0].node.subheadBottom}</Text>
       <BtnContainer>
-        <Button>{data.cta.edges[0].node.btnTextOne}</Button>
-        <Button secondary="secondary">
+        <Button to="/">{data.cta.edges[0].node.btnTextOne}</Button>
+        <Button to="/" secondary="secondary">
           {data.cta.edges[0].node.btnTextTwo}
         </Button>
       </BtnContainer>

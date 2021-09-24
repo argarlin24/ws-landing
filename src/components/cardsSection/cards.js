@@ -26,14 +26,15 @@ const Cards = () => {
     <Container>
       {data.cards.edges.map((card, index) => {
         return (
-          <Card>
+          <Card key={index}>
             <Img
+              alt={card.node.cardTitle}
               className={card.node.cardTitle.split(" ").join("")}
               src={card.node.cardImage.file.url}
             />
             <CardTitle>{card.node.cardTitle}</CardTitle>
             <p>{card.node.cardText}</p>
-            <ArrowLink>{card.node.cardBtnText}</ArrowLink>
+            <ArrowLink to="/">{card.node.cardBtnText}</ArrowLink>
           </Card>
         )
       })}

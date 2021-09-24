@@ -30,6 +30,7 @@ export const NavItem = styled(Link)`
   color: #ffffff;
   padding: 0.75rem 0;
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
     opacity: 0.75;
@@ -66,6 +67,7 @@ export const MobileContainer = styled.div`
 export const MobileSection = styled.div`
   display: flex;
   flex-direction: column;
-  width: 75%;
+  width: 50%;
   margin: 0 auto;
+  text-align: center;
 `

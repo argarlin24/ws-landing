@@ -11,6 +11,7 @@ const StyledLink = styled(Link)`
   background: ${props =>
     props.secondary ? props.theme.color.gray : props.theme.color.blue};
   cursor: pointer;
+  text-decoration: none;
   &:hover {
     opacity: 0.75;
   }
@@ -25,9 +26,9 @@ const Arrow = styled.i`
   transform: rotate(-45deg);
 `
 
-const Button = ({ secondary, children }) => {
+const Button = ({ to, secondary, children }) => {
   return (
-    <StyledLink secondary={secondary}>
+    <StyledLink to={to} secondary={secondary}>
       {children}
       <Arrow />
     </StyledLink>

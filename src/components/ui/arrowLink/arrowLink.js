@@ -8,6 +8,7 @@ const StyledLink = styled(Link)`
   padding: 1rem 0;
   cursor: pointer;
   color: #f65928;
+  text-decoration: none;
 
   &:hover {
     opacity: 0.75;
@@ -23,9 +24,9 @@ const Arrow = styled.i`
   transform: rotate(-45deg);
 `
 
-const Button = ({ secondary, children }) => {
+const Button = ({ to, secondary, children }) => {
   return (
-    <StyledLink secondary={secondary}>
+    <StyledLink to={to} secondary={secondary}>
       {children}
       <Arrow />
     </StyledLink>

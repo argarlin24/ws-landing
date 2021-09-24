@@ -1,6 +1,4 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
-import theme from "../../theme/theme"
 
 export const Container = styled.div`
   display: flex;
@@ -54,7 +52,6 @@ export const Card = styled.div`
     width: 22rem;
   }
 `
-
 export const CardTitle = styled.h3`
   font-size: 1.125rem;
   font-weight: 700;
@@ -103,6 +100,7 @@ export const Img = styled.img`
       bottom: 140px;
     }
   }
+
   @media only screen and (min-width: ${props =>
       props.theme.breakpoint.laptop}) {
     width: 40%;

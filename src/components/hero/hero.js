@@ -19,7 +19,6 @@ const Hero = ({ children }) => {
       }
     }
   `)
-  console.log(data)
   return (
     <HeroBg heroUrl={data.hero.edges[0].node.heroImage.file.url}>
       {children}

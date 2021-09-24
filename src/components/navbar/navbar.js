@@ -32,17 +32,17 @@ const Navbar = () => {
           <Bar />
         </BurgerContainer>
         <NavSection>
-          <NavItem>What's Included</NavItem>
-          <NavItem>Pricing</NavItem>
-          <NavItem>Sign In</NavItem>
-          <Button>Get Started</Button>
+          <NavItem to="/">What's Included</NavItem>
+          <NavItem to="/">Pricing</NavItem>
+          <NavItem to="/">Sign In</NavItem>
+          <Button to="/">Get Started</Button>
         </NavSection>
         <MobileContainer toggle={menu}>
           <MobileSection>
-            <MobileNavItem>What's Included</MobileNavItem>
-            <MobileNavItem>Pricing</MobileNavItem>
-            <MobileNavItem>Sign In</MobileNavItem>
-            <Button>Get Started</Button>
+            <MobileNavItem to="/">What's Included</MobileNavItem>
+            <MobileNavItem to="/">Pricing</MobileNavItem>
+            <MobileNavItem to="/">Sign In</MobileNavItem>
+            <Button to="/">Get Started</Button>
           </MobileSection>
         </MobileContainer>
       </NavContainer>
