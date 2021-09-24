@@ -1,17 +1,19 @@
 import * as React from "react"
-import styled from "styled-components"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import CTASection from "../components/ctaSection"
-import Cards from "../components/Cards"
+import Cta from "../components/ctaSection/cta"
+import Cards from "../components/cardsSection/cards"
 
-const IndexPage = props => (
-  <Layout>
-    <Seo title="Home" />
-    <CTASection />
-    <Cards />
-  </Layout>
-)
+import { graphql } from "gatsby"
 
+const IndexPage = ({ data }) => {
+  return (
+    <Layout>
+      <Seo title="Home" />
+      <Cta />
+      <Cards />
+    </Layout>
+  )
+}
 export default IndexPage

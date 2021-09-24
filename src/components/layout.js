@@ -4,8 +4,8 @@ import PropTypes from "prop-types"
 import GlobalStyles from "../theme/globalStyles"
 import theme from "../theme/theme"
 import { ThemeProvider } from "styled-components"
-import HeroBg from "./heroBg"
-import Header from "./header"
+import HeroBg from "./hero/heroBg"
+import Header from "./header/header"
 
 const Layout = ({ children }) => {
   return (

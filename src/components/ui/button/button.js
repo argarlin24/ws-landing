@@ -3,12 +3,14 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 const StyledLink = styled(Link)`
+  font-size: 0.875rem;
+  font-weight: 700;
   padding: 0.5rem 1rem;
-  border-radius: 5px;
+  border-radius: 3px;
   color: #fff;
   background: ${props =>
     props.secondary ? props.theme.color.gray : props.theme.color.blue};
-
+  cursor: pointer;
   &:hover {
     opacity: 0.75;
   }

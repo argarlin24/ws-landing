@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -36,6 +38,13 @@ module.exports = {
       options: {
         fonts: [`inter\:400,700`],
         display: "swap",
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `pcmaiie43iso`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     `gatsby-plugin-styled-components`,
