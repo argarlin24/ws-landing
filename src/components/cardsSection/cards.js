@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import ArrowLink from "../ui/arrowLink/arrowLink"
-import { Container, Card, Img, ImgOne, ImgTwo, ImgThree } from "./cardsStyles"
+import { Container, Card, CardTitle, Img } from "./cardsStyles"
 
 const Cards = () => {
   const data = useStaticQuery(graphql`
@@ -31,7 +31,7 @@ const Cards = () => {
               className={card.node.cardTitle.split(" ").join("")}
               src={card.node.cardImage.file.url}
             />
-            <p>{card.node.cardTitle}</p>
+            <CardTitle>{card.node.cardTitle}</CardTitle>
             <p>{card.node.cardText}</p>
             <ArrowLink>{card.node.cardBtnText}</ArrowLink>
           </Card>

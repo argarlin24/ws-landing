@@ -12,6 +12,7 @@ const theme = {
     tablet: "600px",
     laptop: "1200px",
     desktop: "1600px",
+    xldesktop: "1920px",
   },
 }
 

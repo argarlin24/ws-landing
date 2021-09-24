@@ -5,8 +5,9 @@ import styled from "styled-components"
 const StyledLink = styled(Link)`
   font-size: 0.875rem;
   font-weight: 700;
-  padding: 0.5rem 1rem;
+  padding: 1rem 0;
   cursor: pointer;
+  color: #f65928;
 
   &:hover {
     opacity: 0.75;
@@ -14,7 +15,7 @@ const StyledLink = styled(Link)`
 `
 
 const Arrow = styled.i`
-  border: solid #000000;
+  border: solid #f65928;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;

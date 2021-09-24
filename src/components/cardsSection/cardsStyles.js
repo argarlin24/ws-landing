@@ -1,48 +1,164 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
+import theme from "../../theme/theme"
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: row;
-  width: 66%;
+  flex-direction: column;
   margin: 0 auto;
   justify-content: space-around;
-  padding: 5rem;
+  padding: 3rem;
+
+  @media only screen and (min-width: ${props =>
+      props.theme.breakpoint.laptop}) {
+    flex-direction: row;
+    width: 66%;
+    padding: 5rem 0;
+  }
 `
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
-  height: 20vh;
   background: #ffffff;
   border-radius: 4px;
-  flex-grow: 1;
-  margin: 1rem;
+  margin: 1rem auto;
   padding: 1.5rem;
+  flex-shrink: 0;
+  height: 7rem;
+  width: 15rem;
+
+  @media only screen and (min-width: ${props =>
+      props.theme.breakpoint.tablet}) {
+    height: 10rem;
+    width: 18rem;
+  }
+
+  @media only screen and (min-width: ${props =>
+      props.theme.breakpoint.laptop}) {
+    height: 9rem;
+    width: 13em;
+  }
+
+  @media only screen and (min-width: ${props =>
+      props.theme.breakpoint.desktop}) {
+    height: 12rem;
+    width: 18rem;
+  }
+
+  @media only screen and (min-width: ${props =>
+      props.theme.breakpoint.xldesktop}) {
+    height: 14rem;
+    width: 22rem;
+  }
 `
 
+export const CardTitle = styled.h3`
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 27px;
+`
+export const CardText = styled.p`
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 17px;
+`
 export const Img = styled.img`
+  position: absolute;
+  height: auto;
+  width: 30%;
+
   &.AugmentedReality {
-    left: 165px;
-    bottom: 100px;
+    left: 220px;
+    bottom: 95px;
   }
 
   &.VirtualReality {
-    left: 165px;
-    bottom: 100px;
+    left: 210px;
+    bottom: 90px;
   }
 
   &.Mobile {
-    left: 180px;
+    left: 240px;
     bottom: 100px;
-    transform: rotate(44deg);
+    transform: rotate(-1deg);
   }
-  position: absolute;
-  height: auto;
-  width: 50%;
-`
 
-export const StyledLink = styled(Link)`
-  font-size: 1.12rem;
+  @media only screen and (min-width: ${props =>
+      props.theme.breakpoint.tablet}) {
+    &.AugmentedReality {
+      left: 250px;
+      bottom: 120px;
+    }
+
+    &.VirtualReality {
+      left: 250px;
+      bottom: 130px;
+    }
+
+    &.Mobile {
+      left: 280px;
+      bottom: 140px;
+    }
+  }
+  @media only screen and (min-width: ${props =>
+      props.theme.breakpoint.laptop}) {
+    width: 40%;
+
+    &.AugmentedReality {
+      left: 170px;
+      bottom: 110px;
+    }
+
+    &.VirtualReality {
+      left: 170px;
+      bottom: 110px;
+    }
+
+    &.Mobile {
+      left: 200px;
+      bottom: 120px;
+    }
+  }
+
+  @media only screen and (min-width: ${props =>
+      props.theme.breakpoint.desktop}) {
+    width: 40%;
+
+    &.AugmentedReality {
+      left: 220px;
+      bottom: 130px;
+    }
+
+    &.VirtualReality {
+      left: 220px;
+      bottom: 140px;
+    }
+
+    &.Mobile {
+      left: 260px;
+      bottom: 150px;
+    }
+  }
+
+  @media only screen and (min-width: ${props =>
+      props.theme.breakpoint.xldesktop}) {
+    width: 40%;
+
+    &.AugmentedReality {
+      left: 260px;
+      bottom: 140px;
+    }
+
+    &.VirtualReality {
+      left: 260px;
+      bottom: 140px;
+    }
+
+    &.Mobile {
+      left: 300px;
+      bottom: 160px;
+    }
+  }
 `

@@ -11,8 +11,12 @@ export const NavContainer = styled.div`
 `
 export const NavSection = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-content: center;
+  @media only screen and (min-width: ${props =>
+      props.theme.breakpoint.laptop}) {
+    flex-direction: row;
+  }
 `
 export const NavBrand = styled.div`
   font-size: 1.5rem;

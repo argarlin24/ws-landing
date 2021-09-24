@@ -5,7 +5,7 @@ import styled from "styled-components"
 const StyledLink = styled(Link)`
   font-size: 0.875rem;
   font-weight: 700;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.25rem;
   border-radius: 3px;
   color: #fff;
   background: ${props =>
@@ -18,7 +18,7 @@ const StyledLink = styled(Link)`
 
 const Arrow = styled.i`
   border: solid #ffffff;
-  border-width: 0 3px 3px 0;
+  border-width: 0 2.5px 2.5px 0;
   display: inline-block;
   padding: 3px;
   margin-left: 5px;

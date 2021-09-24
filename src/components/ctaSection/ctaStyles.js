@@ -7,10 +7,16 @@ export const Container = styled.div`
   margin: 0 auto;
 `
 export const BtnContainer = styled.div`
-  width: 33%;
+  margin-top: 1rem;
+
   display: flex;
   flex-direction: row;
   gap: 0.875rem;
+
+  @media only screen and (min-width: ${props =>
+      props.theme.breakpoint.laptop}) {
+    width: 40%;
+  }
 `
 export const Tagline = styled.p`
   font-size: 1.125rem;
