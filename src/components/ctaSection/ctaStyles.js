@@ -8,10 +8,16 @@ export const Container = styled.div`
 `
 export const BtnContainer = styled.div`
   margin-top: 1rem;
-
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  text-align: center;
   gap: 0.875rem;
+
+  @media only screen and (min-width: ${props =>
+      props.theme.breakpoint.tablet}) {
+    flex-direction: row;
+    text-algin: left;
+  }
 
   @media only screen and (min-width: ${props =>
       props.theme.breakpoint.laptop}) {

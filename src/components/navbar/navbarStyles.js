@@ -54,7 +54,7 @@ export const Bar = styled.div`
   }
 `
 export const MobileContainer = styled.div`
-  display: ${props => (props.toggle ? "none" : "block")};
+  display: ${props => (props.toggle ? "block" : "none")};
   position: absolute;
   top: 90px;
   left: 0;
